@@ -28,7 +28,7 @@
             <size
                 android:height="30dp"/>
             <solid
-                android:color="#2AA89C"/>
+                android:color="#4D379E"/>
         </shape>
     </item>
 </selector>
