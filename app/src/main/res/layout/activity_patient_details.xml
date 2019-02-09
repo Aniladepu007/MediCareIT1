@@ -7,6 +7,17 @@
     android:background="@drawable/side_nav_bar"
     tools:context=".PatientDetails">
 
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Medical ID"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="365dp"
@@ -37,8 +48,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -46,6 +57,7 @@
         android:id="@+id/editText5"
         android:layout_width="395dp"
         android:layout_height="43dp"
+        android:layout_marginTop="136dp"
         android:ems="10"
         android:hint="Date Of Birth DD/MM/YYYY"
         android:inputType="date"
@@ -63,35 +75,21 @@
         app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
     <EditText
-        android:id="@+id/editText7"
-        android:layout_width="346dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Address"
-        android:inputType="textPostalAddress"
-        app:layout_constraintStart_toStartOf="@+id/editText10"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
-
-    <EditText
         android:id="@+id/editText9"
         android:layout_width="346dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="Blood Group"
         android:inputType="textPersonName"
-        android:text="Blood Group"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintStart_toStartOf="@+id/editText20"
+        app:layout_constraintTop_toBottomOf="@+id/editText20" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/editText7"
         android:layout_width="346dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Allergies"
+        android:hint="Hostel"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="@+id/editText14"
         app:layout_constraintTop_toBottomOf="@+id/editText14" />
@@ -111,7 +109,7 @@
         android:layout_width="346dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Height"
+        android:hint="Room Number"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="@+id/editText13"
         app:layout_constraintTop_toBottomOf="@+id/editText13" />
@@ -120,7 +118,7 @@
         android:id="@+id/imageView7"
         android:layout_width="33dp"
         android:layout_height="32dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="140dp"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/ic_local_hospital_black_24dp" />
@@ -129,9 +127,59 @@
         android:id="@+id/imageView8"
         android:layout_width="33dp"
         android:layout_height="32dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="204dp"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/ic_add_location_black_24dp" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/editText11"
+        app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+    <EditText
+        android:id="@+id/editText19"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sex (M/F)"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editText12"
+        app:layout_constraintTop_toBottomOf="@+id/editText12" />
+
+    <EditText
+        android:id="@+id/editText20"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile NUmber"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Latitude"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editText7"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText21"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Longitude"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editText10"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
 
 </android.support.constraint.ConstraintLayout>
